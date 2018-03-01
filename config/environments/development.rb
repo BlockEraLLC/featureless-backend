@@ -44,6 +44,8 @@ Rails.application.configure do
   # Highlight code that triggered database queries in logs.
   config.active_record.verbose_query_logs = true
 
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+config.secret_key = '85d226f15109a359110eae3b54a26e79155df1e5bd3b0709b73f636838a9a0b7ef2e6b07a10a61c6a4b84f6aeb8367234887ff448cfd8a5fde7215d29ef5714b'
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
